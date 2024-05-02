@@ -8,7 +8,7 @@ Users can search for movies in real-time, view comprehensive details about each 
 
 ### Live Preview
 
-The live preview of the movie application can be accessed at [Here](https://movie-application-v1.netlify.app/moviedetails/299537).
+The live preview of the movie application can be accessed at [Here](https://movie-application-v1.netlify.app/).
 
 ### Key Features
 
@@ -42,16 +42,24 @@ The live preview of the movie application can be accessed at [Here](https://movi
 To run the Movie App locally, follow these steps:
 
 1. Clone the repository: 
-    `git clone https://github.com/your-username/movie-app.git`
+    ```bash
+    git clone https://github.com/your-username/movie-app.git
+   ```
 
 2. Navigate to the project directory: 
-    `cd movie-app`
+   ```bash
+    cd movie-app
+   ```
 
 3. Install the dependencies: 
-    `npm install`
+    ```bash
+    npm install
+   ```
 
 4. Start the development server: 
-    `npm start`
+    ```bash
+    npm start
+   ```
 
-5. Open your web browser and visit `http://localhost:3000` to see the app in action.
+5. Open your web browser and visit ``` bash http://localhost:3000 ``` to see the app in action.
 
