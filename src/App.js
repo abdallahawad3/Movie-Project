@@ -1,9 +1,9 @@
-// import { useEffect } from 'react';
-import axios, { all } from 'axios';
+import axios from 'axios';
 import MainSection from "./containers/MainSection";
 import NavBar from "./components/NavBar";
 import { useEffect, useState } from 'react';
-
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import MovieDetails from './components/MovieDetails';
 function App() {
   const [movie, setMovie] = useState([]);
   const [allPages, setAllPages] = useState(0);
@@ -43,7 +43,12 @@ function App() {
   return (
     <div className="App">
       <NavBar search={search} />
-      <MainSection data={movie} getPage={getPage} allPages={allPages} />
+      <BrowserRouter>
+        <Routes >
+          <Route path='/' element={<MainSection data={movie} getPage={getPage} allPages={allPages} />} />
+          <Route path='/moviedetails/:id' element={<MovieDetails getPage={getPage} allPages={allPages} />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

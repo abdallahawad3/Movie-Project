@@ -72,6 +72,31 @@ code {
   flex-wrap: wrap;
 }
 
+.movie-details-card-img {
+  width: 18rem !important;
+  height: 18rem !important;
+}
+
+.movie-details-card-img img {
+  width: 100%;
+}
+
+@media (max-width: 550px){
+  .movie-details-card {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .movie-details-card {
+    flex-direction: column;
+  }
+
+  .movie-details-card-img {
+    width: 16rem !important;
+    height: 16rem !important;
+  }
+}
 
 @media (max-width: 550px) {
   
